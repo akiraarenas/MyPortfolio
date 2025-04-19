@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horizontal Experience Timeline</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #e0e0e0;
+      padding: 50px 20px;
+    }
+
+    .timeline-horizontal {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      position: relative;
+      padding-top: 80px;
+    }
+
+    .timeline-horizontal::before {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: #1f6feb;
+      z-index: 0;
+    }
+
+    .timeline-box {
+      position: relative;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid #1f6feb;
+      border-radius: 14px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(31, 111, 235, 0.2);
+      z-index: 1;
+      transition: 0.3s;
+    }
+
+    .timeline-box:hover {
+      box-shadow: 0 0 20px rgba(31, 111, 235, 0.5);
+    }
+
+    .timeline-box::after {
+      content: '';
+      position: absolute;
+      top: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 16px;
+      height: 16px;
+      background-color: #1f6feb;
+      border: 3px solid #0d1117;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .timeline-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #58a6ff;
+    }
+
+    .timeline-tools {
+      font-size: 0.85rem;
+      color: #8b949e;
+      margin-bottom: 8px;
+    }
+
+    .timeline-desc {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 1024px) {
+      .timeline-horizontal {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .timeline-horizontal::before {
+        height: 100%;
+        width: 4px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .timeline-box {
+        width: 90%;
+        margin-bottom: 60px;
+      }
+
+      .timeline-box::after {
+        top: auto;
+        left: -28px;
+        top: 20px;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timeline-horizontal">
+
+    <div class="timeline-box">
+      <div class="timeline-title">🧩 Workflow Automation</div>
+      <div class="timeline-tools">Power Automate, Power Apps, SharePoint</div>
+      <div class="timeline-desc">
+        Automating workflows to streamline operations and save time using Microsoft tools and Automate Anywhere.
+      </div>
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-title">🧠 Data & Reporting</div>
+      <div class="timeline-tools">Power Query, Excel, M Language</div>
+      <div class="timeline-desc">
+        Building dashboards and automating data processes for clean, insightful reporting.
+      </div>
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-title">🎨 UI/UX & Front-End</div>
+      <div class="timeline-tools">Figma, XD, HTML, CSS, React</div>
+      <div class="timeline-desc">
+        Designing and coding user-friendly, responsive front-end interfaces and layouts.
+      </div>
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-title">🌐 WordPress & Elementor</div>
+      <div class="timeline-tools">WordPress, Elementor, Custom Themes</div>
+      <div class="timeline-desc">
+        Creating fully customizable WordPress sites for portfolios, blogs, and businesses.
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
