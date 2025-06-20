@@ -509,7 +509,7 @@ circle.meter {
 
 .testimonial-container {
   background-color: #1f1f1f;
-  border: 1px solid #6d28d9;
+  border: 1px solid #0C00CE;
   padding: 40px 20px;
   display: flex;
   align-items: center;
@@ -550,7 +550,7 @@ circle.meter {
 }
 
 .client-name {
-  color: #4f46e5;
+  color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
   margin: 0;
@@ -726,6 +726,10 @@ circle.meter {
 
 /* Desktop */
 @media (min-width: 1440px) and (max-width: 1919px) {
+  body{
+    max-width: 1800px;
+    margin: auto;
+  }
   .hero-left .profile-pic {
     width: 800px;
   }
@@ -781,6 +785,11 @@ circle.meter {
 }
 
 @media (min-width: 1280px) and (max-width: 1439px){
+  body{
+    max-width: 1800px;
+    margin: auto;
+  }
+
   .hero-left .profile-pic {
     width: 700px;
   }
@@ -856,6 +865,10 @@ circle.meter {
 }
 
 @media (min-width: 1024px) and (max-width: 1279px){
+  body{
+    max-width: 1800px;
+    margin: auto;
+  }
   .navbar {
         padding: 20px 0;
     }
@@ -890,10 +903,16 @@ circle.meter {
   }
   .btn-secondary {
     font-size: 13px;
+    padding: 10px 25px;
   }
-  .social-icon{
-    font-size: 14px;
+.social-icons-container {
+    gap: 5px;
+    padding-left: 10px;
+    padding-top:0 ;
   }
+  .social-icon-no-left {
+    padding-left: 0;
+}
   .stats {
     gap: 40px;
     margin-top: -60px;
@@ -920,8 +939,8 @@ circle.meter {
   gap: 100px;
 }
   .portfolio-card {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
   }
   .portfolio-card h3 {
     font-size: 18px;
@@ -935,8 +954,12 @@ circle.meter {
     margin-right: 0;
   }
 /* Skills Section */
+.skills-section {
+  gap: 30px;
+}
 .radial-skill {
-  width: 70px;
+  width: 120px;
+  margin: 10px;
 }
 .skill-name {
     font-size: 12px;
@@ -947,13 +970,36 @@ circle.meter {
     padding: 60px 5%;
   }
   .contact-info h2 {
-    font-size: 35px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
   }
   .contact-info p {
-    font-size: 16px;
+    font-size: 14px;
+    
   }
+  .testimonial-desc {
+    font-size: 14px;
+  }
+  .section-title-shadow {
+    font-size: 80px;
+    top: -85px;
+  }
+  .title-front {
+    font-size: 30px;
+  }
+  i.fa-envelope {
+    padding: 20px 90px;
+    
+  }
+  
+
 }
 @media (min-width: 768px) and (max-width: 1023px){
+  body{
+    max-width: 1800px;
+    margin: auto;
+  }
   .navbar {
         padding: 20px 0;
     }
