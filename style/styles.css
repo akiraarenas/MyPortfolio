@@ -71,8 +71,12 @@
     text-decoration: none;
     color: #fff;
     font-weight: 500;
+    transition: 0.3s;
   }
-  
+  .navbar a:hover {
+    color: #0C00CE;
+    
+  }
   nav {
     display: flex;
   }
@@ -84,6 +88,11 @@
     border-radius: 40px;
     text-decoration: none;
     white-space: nowrap;
+    transition: 0.3s;
+  }
+  .btn-primary:hover{
+    background-color: #fff;
+
   }
   
   /* HAMBURGER MENU */
@@ -174,9 +183,13 @@
     margin-bottom: 30px;
     display: inline-block;
     float: left;
+    transition: 0.5s;
   }
   .btn-secondary span {
     margin-left: 5px;
+  }
+  .btn-secondary:hover{
+    background-color: #0C00CE;
   }
 .social-icons-container {
   display: flex;
@@ -199,7 +212,10 @@
   font-size: 20px;
   transition: background-color 0.3s;
   text-decoration: none;
-
+transition: 0.5s;
+}
+.social-icon:hover{
+  background-color: #0C00CE;
 }
  .stats {
     display: flex;
@@ -349,6 +365,7 @@
     color: #fff;
     text-align: left;
     padding: 40px 60px;
+    height: 100%;
   }
   .company-name{
     font-size: 14px;
@@ -996,9 +1013,14 @@ circle.meter {
 
 }
 @media (min-width: 768px) and (max-width: 1023px){
+  * {
+  box-sizing: border-box;
+  }
   body{
-    max-width: 1800px;
-    margin: auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
   }
   .navbar {
         padding: 20px 0;
@@ -1101,74 +1123,361 @@ circle.meter {
       display: none;
     }
 }
-@media (max-width: 479px){
-    .navbar {
-        padding: 20px 0;
-    }
-    .menu-toggle {
-      display: block;
-    }
-  
-    .nav-right {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-    }
-  
-    .nav-links {
-      display: none;
-      width: 100%;
-    }
-  
-    .nav-links.active {
-      display: block;
-    }
-  
-    .nav-links ul {
-      flex-direction: column;
-      gap: 10px;
-      background-color: #000;
-      padding: 20px 0;
-    }
-  
-    .btn-primary {
-      display: none;
-    }
-}
+@media (min-width: 425px) and (max-width: 479px) {
+  body {
+    min-width: 450px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 30px;
 
-  /* RESPONSIVE DESIGN 
-  @media (max-width: 768px) {
-    
+    overflow-x: hidden;
   }
-  @media (max-width: 425px) {
-    .navbar {
-        padding: 20px 0;
-    }
-  }
-  @media (max-width: 320px) {
-    body {
-        padding: 20px 30px;
-    }
-    .logo-text {
+  .img-logo {
+    height: 50px;
+    width: auto;
+}
+  .logo-text {
+    font-size: 30px;
         padding: 0 10px;
-        font-size: 22px;
-    }
-    .img-logo {
-        height: 50px;
-        width: auto;
-      }
   }
-  
-  @media (max-width: 768px) {
-    .navbar ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-    .stats {
-      flex-direction: column;
-      gap: 15px;
-    }
-    .hero-content {
-      padding: 20px;
-    }
-  } */
+  .navbar {
+    padding: 20px 0;
+
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000;
+    padding: 20px 0;
+  }
+
+  .btn-primary {
+    display: none;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 10px 0;
+
+  }
+
+  .hero-left .profile-pic {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: -100px;
+    display: block;
+    filter: none;
+  }
+
+  .hero-right {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero h3 {
+    font-size: 20px;
+    justify-self: center;
+    margin: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: center;
+        margin-bottom: 10px;
+  }
+
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+    float: none;
+    display: inline-block;
+    margin: 20px auto;
+  }
+
+  .social-icons-container {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .stats {
+    gap: 10px;
+    margin: 10px 0 0;
+    padding: auto;
+  }
+  .stats div {
+    min-width: 180px;
+    margin: auto;
+  }
+  .stats h3 {
+    font-size: 30px;
+    margin: 5px;
+  }
+
+  .stats span {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .section-title-shadow {
+    font-size: 60px;
+    top: -65px;
+  }
+
+  .title-front {
+    font-size: 28px;
+  }
+
+  .job-card {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .card,
+  .portfolio-card {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .section-title-container {
+    margin-top: 20px;
+}
+.portfolio-items{
+  gap: 100px;
+}
+.testimonial-desc{
+  margin-top: -50px;
+}
+.arrow {
+  display: none;
+}
+.contact-form{
+  min-width: 300px;
+  order:1;
+}
+.contact-info {
+  order:2 ;
+}
+}
+@media (max-width: 424px) {
+  body {
+    min-width: 450px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 30px;
+    
+    overflow-x: hidden;
+  }
+  .img-logo {
+    height: 50px;
+    width: auto;
+}
+  .logo-text {
+    font-size: 30px;
+        padding: 0 10px;
+  }
+  .navbar {
+    padding: 20px 0;
+
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000;
+    padding: 20px 0;
+  }
+
+  .btn-primary {
+    display: none;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 10px 0;
+
+  }
+
+  .hero-left .profile-pic {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: -100px;
+    display: block;
+    filter: none;
+  }
+
+  .hero-right {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero h3 {
+    font-size: 20px;
+    justify-self: center;
+    margin: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: center;
+        margin-bottom: 10px;
+  }
+
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+    float: none;
+    display: inline-block;
+    margin: 20px auto;
+  }
+
+  .social-icons-container {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .stats {
+    gap: 10px;
+    margin: 10px 0 0;
+    padding: auto;
+  }
+  .stats div {
+    min-width: 180px;
+    margin: auto;
+  }
+  .stats h3 {
+    font-size: 30px;
+    margin: 5px;
+  }
+
+  .stats span {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .section-title-shadow {
+    font-size: 60px;
+    top: -65px;
+  }
+
+  .title-front {
+    font-size: 28px;
+  }
+
+  .job-card {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .card,
+  .portfolio-card {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .section-title-container {
+    margin-top: 20px;
+}
+.portfolio-items{
+  gap: 100px;
+}
+.testimonial-desc{
+  margin-top: -50px;
+}
+.arrow {
+  display: none;
+}
+.contact-form{
+  min-width: 300px;
+  order:1;
+}
+.contact-info {
+  order:2 ;
+}
+}
