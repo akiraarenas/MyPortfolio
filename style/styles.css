@@ -1029,14 +1029,13 @@ circle.meter {
 
 }
 @media (min-width: 768px) and (max-width: 1023px){
-  * {
-  box-sizing: border-box;
-  }
+ 
   body{
+    min-width: 1050px;
     width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px 0;
+    padding: 0 50px;
+    overflow-x: hidden;
   }
   .navbar {
         padding: 20px 0;
@@ -1070,8 +1069,77 @@ circle.meter {
     .btn-primary {
       display: none;
     }
+    .hero-left .profile-pic {
+      margin-top: -150px;
+    width: 600px;
+    }
+    .hero-right {
+        max-width: 450px;
+        margin-right: 0;
+    }
+    .hero-right h3 {
+      font-size: 30px;
+    }
+    .hero-right h1 {
+      font-size: 46px;
+    }
+    .hero-right p {
+      font-size: 16px;
+    }
+    .btn-secondary {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+    .social-icon {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    }
+    .stats {
+    display: flex;
+    gap: 60px;
+    margin-top: -100px;
+    }
+    .stats div {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
 }
+    .stats h3 {
+    font-size: 50px;
+    }
+    .stats span {
+    font-size: 18px;
+    }
+    .services-cards {
+    gap: 60px;
+}
+    .portfolio-items {
+    gap: 120px;
+}
+    .job-left {
+      margin-left: 0;
+    }
+    .job-right {
+      margin-right: 0;
+    }
+    .contact-section {
+    padding: 60px 0; 
+}
+    }
 @media (min-width: 600px) and (max-width: 767px){
+  
+  body{
+    min-width: 1000px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 50px;
+    overflow-x: hidden;
+  }
   .navbar {
         padding: 20px 0;
     }
@@ -1104,8 +1172,77 @@ circle.meter {
     .btn-primary {
       display: none;
     }
+    .hero-left .profile-pic {
+      margin-top: -150px;
+      width: 570px;
+    }
+    .hero-right {
+        max-width: 450px;
+        margin-right: 0;
+    }
+    .hero-right h3 {
+      font-size: 30px;
+    }
+    .hero-right h1 {
+      font-size: 46px;
+    }
+    .hero-right p {
+      font-size: 16px;
+    }
+    .btn-secondary {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+    .social-icon {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    }
+    .stats {
+    display: flex;
+    gap: 40px;
+    margin-top: -50px;
+    }
+    .stats div {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+    .stats h3 {
+    font-size: 50px;
+    }
+    .stats span {
+    font-size: 18px;
+    }
+    .services-cards {
+    gap: 60px;
+}
+    .portfolio-items {
+    gap: 100px;
+}
+    .job-left {
+      margin-left: 0;
+    }
+    .job-right {
+      margin-right: 0;
+    }
+    .contact-section {
+    padding: 60px 0; 
+}
 }
 @media (min-width: 480px) and (max-width: 599px){
+   
+  body{
+    min-width: 1000px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 50px;
+    overflow-x: hidden;
+  }
   .navbar {
         padding: 20px 0;
     }
@@ -1138,6 +1275,67 @@ circle.meter {
     .btn-primary {
       display: none;
     }
+    .hero-left .profile-pic {
+      margin-top: -150px;
+      width: 570px;
+    }
+    .hero-right {
+        max-width: 450px;
+        margin-right: 0;
+    }
+    .hero-right h3 {
+      font-size: 30px;
+    }
+    .hero-right h1 {
+      font-size: 46px;
+    }
+    .hero-right p {
+      font-size: 16px;
+    }
+    .btn-secondary {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+    .social-icon {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    }
+    .stats {
+    display: flex;
+    gap: 40px;
+    margin-top: -50px;
+    }
+    .stats div {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+    .stats h3 {
+    font-size: 50px;
+    }
+    .stats span {
+    font-size: 18px;
+    }
+    .services-cards {
+    gap: 60px;
+}
+    .portfolio-items {
+    gap: 100px;
+}
+    .job-left {
+      margin-left: 0;
+    }
+    .job-right {
+      margin-right: 0;
+    }
+    .contact-section {
+    padding: 60px 0; 
+}
 }
 @media (min-width: 425px) and (max-width: 479px) {
   body {
